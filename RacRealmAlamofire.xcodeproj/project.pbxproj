@@ -14,6 +14,11 @@
 		690D8B7B1D33FE3B0031F668 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 690D8B791D33FE3B0031F668 /* LaunchScreen.storyboard */; };
 		690D8B861D33FE3B0031F668 /* RacRealmAlamofireTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690D8B851D33FE3B0031F668 /* RacRealmAlamofireTests.swift */; };
 		690D8B911D33FE3B0031F668 /* RacRealmAlamofireUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690D8B901D33FE3B0031F668 /* RacRealmAlamofireUITests.swift */; };
+		D13E37551D34F2E8003F5F44 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D13E37541D34F2E8003F5F44 /* Alamofire.framework */; };
+		D13E37571D34F2F2003F5F44 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D13E37561D34F2F2003F5F44 /* ReactiveCocoa.framework */; };
+		D13E37591D34F2FB003F5F44 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D13E37581D34F2FB003F5F44 /* Realm.framework */; };
+		D13E375B1D34F305003F5F44 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D13E375A1D34F305003F5F44 /* RealmSwift.framework */; };
+		D13E375D1D34F30D003F5F44 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D13E375C1D34F30D003F5F44 /* Result.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		690D8B8C1D33FE3B0031F668 /* RacRealmAlamofireUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RacRealmAlamofireUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		690D8B901D33FE3B0031F668 /* RacRealmAlamofireUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacRealmAlamofireUITests.swift; sourceTree = "<group>"; };
 		690D8B921D33FE3B0031F668 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D13E37541D34F2E8003F5F44 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		D13E37561D34F2F2003F5F44 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
+		D13E37581D34F2FB003F5F44 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		D13E375A1D34F305003F5F44 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		D13E375C1D34F30D003F5F44 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D13E37551D34F2E8003F5F44 /* Alamofire.framework in Frameworks */,
+				D13E37571D34F2F2003F5F44 /* ReactiveCocoa.framework in Frameworks */,
+				D13E37591D34F2FB003F5F44 /* Realm.framework in Frameworks */,
+				D13E375B1D34F305003F5F44 /* RealmSwift.framework in Frameworks */,
+				D13E375D1D34F30D003F5F44 /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +92,11 @@
 		690D8B641D33FE3B0031F668 = {
 			isa = PBXGroup;
 			children = (
+				D13E375C1D34F30D003F5F44 /* Result.framework */,
+				D13E375A1D34F305003F5F44 /* RealmSwift.framework */,
+				D13E37581D34F2FB003F5F44 /* Realm.framework */,
+				D13E37561D34F2F2003F5F44 /* ReactiveCocoa.framework */,
+				D13E37541D34F2E8003F5F44 /* Alamofire.framework */,
 				690D8B6F1D33FE3B0031F668 /* RacRealmAlamofire */,
 				690D8B841D33FE3B0031F668 /* RacRealmAlamofireTests */,
 				690D8B8F1D33FE3B0031F668 /* RacRealmAlamofireUITests */,
@@ -135,6 +155,7 @@
 				690D8B691D33FE3B0031F668 /* Sources */,
 				690D8B6A1D33FE3B0031F668 /* Frameworks */,
 				690D8B6B1D33FE3B0031F668 /* Resources */,
+				D13E37531D34F24D003F5F44 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -250,6 +271,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D13E37531D34F24D003F5F44 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ReactiveCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		690D8B691D33FE3B0031F668 /* Sources */ = {
@@ -399,6 +441,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = RacRealmAlamofire/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = billy.kong.RacRealmAlamofire;
@@ -410,6 +456,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = RacRealmAlamofire/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = billy.kong.RacRealmAlamofire;
@@ -482,6 +532,7 @@
 				690D8B971D33FE3B0031F668 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		690D8B981D33FE3B0031F668 /* Build configuration list for PBXNativeTarget "RacRealmAlamofireTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +541,7 @@
 				690D8B9A1D33FE3B0031F668 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		690D8B9B1D33FE3B0031F668 /* Build configuration list for PBXNativeTarget "RacRealmAlamofireUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +550,7 @@
 				690D8B9D1D33FE3B0031F668 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
